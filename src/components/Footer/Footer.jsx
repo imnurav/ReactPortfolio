@@ -41,7 +41,7 @@ const Footer = () => {
         </a>
       </div>
       <div className="footer__copyright">
-        <small>&copy; Varun .All rights Reserved</small>
+        <strong>&copy; {new Date().getFullYear()}.All rights Reserved</strong>
       </div>
     </footer>
   );

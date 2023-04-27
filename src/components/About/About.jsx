@@ -1,8 +1,8 @@
 import React from "react";
 import "./about.css";
-import ME from "../../assets/me-about.jpg";
+import ME from "../../assets/v.jpg";
 import { FaAward } from "react-icons/fa";
-import { FiUsers } from "react-icons/fi";
+// import { FiUsers } from "react-icons/fi";
 import { VscFolderLibrary } from "react-icons/vsc";
 const About = () => {
   return (
@@ -17,36 +17,35 @@ const About = () => {
         </div>
 
         <div className="about__content">
-          <div className="about__cards"> 
-
+          <div className="about__cards">
             <article className="about__card">
               <FaAward className="about__icons" />
               <h5>Experience</h5>
-              <small>1+ Years Working</small>
+              <small>3 Month</small>
             </article>
 
-            <article className="about__card">
+            {/* <article className="about__card">
               <FiUsers className="about__icons" />
               <h5>Clients</h5>
               <small>200 + worldwide</small>
-            </article>
+            </article> */}
 
             <article className="about__card">
               <VscFolderLibrary className="about__icons" />
               <h5>Projects</h5>
-              <small>80+ Completed</small>
+              <small>10+ Completed</small>
             </article>
-
           </div>
 
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe nemo,
-            hic eligendi quia repudiandae esse dignissimos porro accusamus
-            numquam non excepturi. Error laborum quod quia impedit nostrum
-            necessitatibus, blanditiis deserunt! Vel fuga fugiat veritatis?
-           
+            My name is Varun Kumar I have recently completed B.Tech from
+            Maharshi Dayanand University [ Rohtak, Haryana ]. My area of interest includes
+            web development and app development. I am looking forward to connect
+            with engineers and other professionals working in same field.
           </p>
-          <a href="#contact" className="btn btn-primary">Let's Talk</a>
+          <a href="#contact" className="btn btn-primary">
+            Let's Talk
+          </a>
         </div>
       </div>
     </section>
