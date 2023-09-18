@@ -5,6 +5,26 @@ import { FaAward } from "react-icons/fa";
 // import { FiUsers } from "react-icons/fi";
 import { VscFolderLibrary } from "react-icons/vsc";
 const About = () => {
+  function getYearAndMonthDifference() {
+    const startDate = new Date("2023-01-09");
+    const endDate = new Date();
+    const startYear = startDate.getFullYear();
+    const startMonth = startDate.getMonth();
+    const endYear = endDate.getFullYear();
+    const endMonth = endDate.getMonth();
+    const yearDiff = endYear - startYear;
+    const monthDiff = endMonth - startMonth;
+
+    if (monthDiff < 0) {
+      yearDiff--;
+      monthDiff += 12;
+    }
+
+    return { years: yearDiff, months: monthDiff };
+  }
+
+  const difference = getYearAndMonthDifference();
+
   return (
     <section id="about">
       <h5>Get To Know</h5>
@@ -21,7 +41,9 @@ const About = () => {
             <article className="about__card">
               <FaAward className="about__icons" />
               <h5>Experience</h5>
-              <small>3 Month</small>
+              <small>
+                {difference.years} Year {difference.months} Month
+              </small>
             </article>
 
             {/* <article className="about__card">
@@ -39,9 +61,10 @@ const About = () => {
 
           <p>
             My name is Varun Kumar I have recently completed B.Tech from
-            Maharshi Dayanand University [ Rohtak, Haryana ]. My area of interest includes
-            web development and app development. I am looking forward to connect
-            with engineers and other professionals working in same field.
+            Maharshi Dayanand University [ Rohtak, Haryana ]. My area of
+            interest includes web development and app development. I am looking
+            forward to connect with engineers and other professionals working in
+            same field.
           </p>
           <a href="#contact" className="btn btn-primary">
             Let's Talk

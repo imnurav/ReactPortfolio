@@ -13,24 +13,31 @@ const Portfolio = () => {
       <h5>My Recent Work</h5>
       <h2>Portfolio</h2>
       <div className="container portfolio__container">
-        {/* <article className="portfolio__item">
+        <article className="portfolio__item">
           <div className="portfolio__item-image">
-            <img src={IMG1} alt="" />
+            <img
+              src={"https://www.khanglobalstudies.com/icons/kgs.png"}
+              height={120}
+              style={{objectFit:'contain'}}
+              width={"100%"}
+              alt=""
+            />
           </div>
-          <h3>Portfolio Site</h3>
+          <h3>KGS (Website)</h3>
           <div className="portfolio__item-cta">
-            <a href="https://github.com/kumarnurav9811/Varun-sPortfolio" className="btn" rel=" noopener" target='_blank'>
+            {/* <a href="https://github.com/kumarnurav9811/Varun-sPortfolio" className="btn" rel=" noopener" target='_blank'>
               Github 
-            </a>
+            </a> */}
             <a
-              href="https://nurav.herokuapp.com"
+              href="https://www.khanglobalstudies.com"
               className="btn btn-primary"
-              rel=" noopener" target='_blank'
+              rel=" noopener"
+              target="_blank"
             >
               Live Demo
             </a>
           </div>
-        </article> */}
+        </article>
 
         <article className="portfolio__item">
           <div className="portfolio__item-image">
