@@ -31,7 +31,7 @@ const Portfolio = () => {
             <a
               href="https://www.khanglobalstudies.com"
               className="btn btn-primary"
-              rel=" noopener"
+              rel=" noreferrer"
               target="_blank"
             >
               Live Demo

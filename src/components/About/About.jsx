@@ -12,8 +12,8 @@ const About = () => {
     const startMonth = startDate.getMonth();
     const endYear = endDate.getFullYear();
     const endMonth = endDate.getMonth();
-    const yearDiff = endYear - startYear;
-    const monthDiff = endMonth - startMonth;
+    let yearDiff = endYear - startYear;
+    let monthDiff = endMonth - startMonth;
 
     if (monthDiff < 0) {
       yearDiff--;
